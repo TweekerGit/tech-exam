@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechExam", "TechExam\TechExam.csproj", "{CD84D91B-6012-47EC-AF36-B75E08711F43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechExam.Tests", "TechExam.Tests\TechExam.Tests.csproj", "{96E56CC1-B72A-4137-8800-63DA3E65F6F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD84D91B-6012-47EC-AF36-B75E08711F43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD84D91B-6012-47EC-AF36-B75E08711F43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD84D91B-6012-47EC-AF36-B75E08711F43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD84D91B-6012-47EC-AF36-B75E08711F43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96E56CC1-B72A-4137-8800-63DA3E65F6F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96E56CC1-B72A-4137-8800-63DA3E65F6F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96E56CC1-B72A-4137-8800-63DA3E65F6F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96E56CC1-B72A-4137-8800-63DA3E65F6F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
