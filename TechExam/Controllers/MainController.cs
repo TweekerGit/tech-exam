@@ -14,6 +14,13 @@ public class MainController : Controller
         _service = service;
     }
 
+    [HttpGet]
+    [ApiExplorerSettings(IgnoreApi = true)]
+    public IActionResult Swagger()
+    {
+        return Redirect("/swagger");
+    }
+
     [HttpGet("start")]
     public IActionResult Start()
     {
