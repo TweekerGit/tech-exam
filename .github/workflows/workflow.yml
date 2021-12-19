@@ -23,7 +23,7 @@ jobs:
         run: dotnet restore
 
       - name: Test
-        run: dotnet test --no-restore --verbosity normal
+        run: dotnet test --no-restore --verbosity
 
       - name: Publish app for deploy
         run: dotnet publish -c Release -o ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}

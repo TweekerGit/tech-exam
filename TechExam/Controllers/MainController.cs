@@ -14,7 +14,7 @@ public class MainController : Controller
         _service = service;
     }
 
-    [HttpGet]
+    [HttpGet("/")]
     [ApiExplorerSettings(IgnoreApi = true)]
     public IActionResult Swagger()
     {
