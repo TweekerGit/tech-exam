@@ -7,9 +7,9 @@ public class UnitTests
 {
     private readonly TestService _testService;
 
-    public UnitTests(TestService testService)
+    public UnitTests()
     {
-        _testService = testService;
+        _testService = new TestService();
     }
 
     [Fact]
