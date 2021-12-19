@@ -19,10 +19,4 @@ public class MainController : Controller
     {
         return Ok("Success");
     }
-    
-    [HttpGet("update")]
-    public IActionResult Update()
-    {
-        return Ok("Success");
-    }
 }
