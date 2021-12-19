@@ -15,7 +15,13 @@ public class MainController : Controller
     }
 
     [HttpGet("start")]
-    public IActionResult Index()
+    public IActionResult Start()
+    {
+        return Ok("Success");
+    }
+    
+    [HttpGet("update")]
+    public IActionResult Update()
     {
         return Ok("Success");
     }
