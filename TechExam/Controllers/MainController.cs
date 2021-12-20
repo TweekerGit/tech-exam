@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Globalization;
+using Microsoft.AspNetCore.Mvc;
 using TechExam.Services;
+using TechExam.sqrt.Models;
 
 namespace TechExam.Controllers;
 
@@ -7,9 +9,9 @@ namespace TechExam.Controllers;
 [Route("[controller]")]
 public class MainController : Controller
 {
-    private readonly TestService _service;
+    private readonly ProgressionService _service;
 
-    public MainController(TestService service)
+    public MainController(ProgressionService service)
     {
         _service = service;
     }
@@ -21,9 +23,30 @@ public class MainController : Controller
         return Redirect("/swagger");
     }
 
-    [HttpGet("start")]
-    public IActionResult Start()
+    [HttpGet("n-element")]
+    public IActionResult GetNElement(int nElement)
     {
-        return Ok("Success");
+        try
+        {
+            return Ok(new ProgressionResponse {Result = _service.GetNElement(nElement)});
+        }
+        catch (Exception e)
+        {
+            return BadRequest($"Error: {e.Message}");
+        }
+    }
+
+    [HttpPost("progression")]
+    public IActionResult Progression(ProgressionRequest request)
+    {
+        try
+        {
+            return Ok(new ProgressionResponse
+                {Result = _service.GetNElement(request.NElement, request.First, request.Difference)});
+        }
+        catch (Exception e)
+        {
+            return BadRequest($"Error: {e.Message}");
+        }
     }
 }
